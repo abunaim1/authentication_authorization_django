@@ -68,7 +68,7 @@ def pass_change(request):
         else:
             form = PasswordChangeForm(user=request.user)
 
-        return render(request, 'passchange.html', {'form':form})
+        return render(request, 'passchange.html', {'form':form})l
     else:
         return redirect('login')
 
